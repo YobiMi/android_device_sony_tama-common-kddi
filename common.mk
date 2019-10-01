@@ -107,6 +107,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     Phonesky \
+    Launcher3QuickStep \
+    SystemUI \
     GoogleServicesFramework
 
 # Don't build debug for host or device
