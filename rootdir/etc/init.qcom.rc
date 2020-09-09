@@ -188,6 +188,8 @@ on early-boot
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
 
+    setprop init.svc.console stopped
+
 on boot
     # NFC local data and storage
     mkdir /data/vendor/nfc 0770 nfc nfc
