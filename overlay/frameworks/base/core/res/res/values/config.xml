@@ -351,6 +351,7 @@
          Setting this to track config_displayWhiteBalanceColorTemperatureDefault (currently 6500K). -->
     <integer name="config_nightDisplayColorTemperatureMax">6500</integer>
 
+<<<<<<< HEAD
     <!-- The default journal mode to use use when Write-Ahead Logging is not active.
          Choices are: OFF, DELETE, TRUNCATE, PERSIST and MEMORY.
          PERSIST may improve performance by reducing how often journal blocks are
@@ -384,4 +385,11 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 </resources>
