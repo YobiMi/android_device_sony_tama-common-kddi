@@ -13,6 +13,12 @@ ro.bluetooth.library_name=libbluetooth.so
 # Charger
 ro.charger.enable_suspend=true
 
+# Dalvik
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=quicken
+
 # CNE
 persist.vendor.cne.feature=1
 
