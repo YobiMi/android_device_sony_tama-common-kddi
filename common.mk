@@ -412,7 +412,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/qcom-caf/wlan
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -487,3 +488,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
+
+# Wlan
+PRODUCT_CFI_INCLUDE_PATHS += \
+    hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
