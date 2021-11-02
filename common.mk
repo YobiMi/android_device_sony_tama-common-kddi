@@ -234,6 +234,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/init.tama_kddi.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.tama_kddi.nfc.rc
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Configure dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
