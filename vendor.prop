@@ -145,6 +145,9 @@ ro.vendor.audio.soundtrigger.hist.duration=1500
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Radio
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
