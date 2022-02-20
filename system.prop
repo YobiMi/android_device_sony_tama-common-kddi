@@ -13,6 +13,9 @@ ro.bluetooth.library_name=libbluetooth.so
 # Charger
 ro.charger.enable_suspend=true
 
+# Dalvik
+pm.dexopt.bg-dexopt=everything
+
 # CNE
 persist.vendor.cne.feature=1
 
