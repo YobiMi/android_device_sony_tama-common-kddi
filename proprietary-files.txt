@@ -954,6 +954,9 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
+# RADIO - from nio_retcn - RRN31.Q3-1-11-6/f81cc
+vendor/lib64/deviceInfoServiceModule.so|c7d4021528f3a43320d0f109a9ed5f765a6a92a2
+
 # SECD firmware
 vendor/etc/firmware/tzsuntory.b00
 vendor/etc/firmware/tzsuntory.b01
