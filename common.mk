@@ -98,6 +98,30 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# ART
+# Optimize for speed dexopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    Phonesky \
+    GoogleServicesFramework
+
+# Don't build debug for host or device
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_HOST_DEBUG := false
+
+# Dex pre-opt
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
+WITH_DEXPREOPT_DEBUG_INFO := false
+
+# Recommend using the non debug dexpreopter
+USE_DEX2OAT_DEBUG := false
+
+# SystemUITests
+EXCLUDE_SYSTEMUI_TESTS := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -171,14 +195,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4.vendor \
     android.hardware.camera.provider@2.4.vendor \
     libgui_shim
-
-# Dex
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-ART_BUILD_TARGET_NDEBUG := true
-ART_BUILD_TARGET_DEBUG := false
-ART_BUILD_HOST_NDEBUG := true
-ART_BUILD_HOST_DEBUG := false
 
 # Component overrides
 PRODUCT_COPY_FILES += \
