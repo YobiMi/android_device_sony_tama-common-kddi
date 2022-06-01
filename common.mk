@@ -123,6 +123,9 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
 
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
