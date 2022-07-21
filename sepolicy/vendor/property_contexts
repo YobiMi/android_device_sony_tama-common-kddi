@@ -20,3 +20,6 @@ vendor.cover_state              u:object_r:vendor_cover_state_prop:s0
 
 # PowerHAL
 vendor.powerhal.           u:object_r:vendor_power_prop:s0
+
+# Audio
+audio.                           u:object_r:audio_prop:s0
