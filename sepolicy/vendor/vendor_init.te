@@ -21,3 +21,6 @@ set_prop(vendor_init, vendor_power_prop)
 
 # Allow vendor init to set cust_system_prop
 set_prop(vendor_init, cust_system_prop)
+set_prop(vendor_init, freq_prop)
+
+get_prop(vendor_init, default_prop)
