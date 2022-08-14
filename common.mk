@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.r_submix.default \
+    sound_trigger.primary.sdm845 \
     audio.usb.default \
     libcirrusspkrprot \
     libqcompostprocbundle \
