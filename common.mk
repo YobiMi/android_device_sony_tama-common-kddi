@@ -190,6 +190,9 @@ PRODUCT_PACKAGES += \
     sensor_json_transfer.sh \
     ueventd.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/init.tama_kddi.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.tama_kddi.nfc.rc
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
@@ -318,7 +321,6 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
     NfcNci \
     libchrome.vendor \
