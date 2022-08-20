@@ -162,6 +162,7 @@ TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 VENDOR_SECURITY_PATCH := 2020-09-01
 
 # SELinux
+SELINUX_IGNORE_NEVERALLOWS := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
