@@ -139,11 +139,14 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
+
+# Bluetooth ftmdaemon needs libbt-hidlclient.so
+PRODUCT_SOONG_NAMESPACES += vendor/qcom/proprietary/bluetooth/hidl_client
 
 # Boot control
 PRODUCT_PACKAGES += \
