@@ -419,7 +419,11 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.0-service \
+    android.hardware.usb.gadget@1.0 \
+    android.hardware.usb.gadget@1.0.vendor \
+    android.hardware.usb.gadget@1.1 \
+    android.hardware.usb.gadget@1.1.vendor
 
 # Update engine
 PRODUCT_PACKAGES += \
