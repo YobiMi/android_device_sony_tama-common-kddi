@@ -103,7 +103,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
-    audio.a2dp.default \
     audio.r_submix.default \
     sound_trigger.primary.sdm845 \
     audio.usb.default \
@@ -128,7 +127,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_i2s.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_i2s.xml \
     $(LOCAL_PATH)/audio/mixer_paths_qvr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qvr.xml \
     $(LOCAL_PATH)/audio/mixer_paths_skuk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_skuk.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info_no_SVA.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info_no_SVA.xml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/bluetooth_hearing_aid_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml \
