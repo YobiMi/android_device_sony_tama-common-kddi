@@ -18,6 +18,9 @@ $(call inherit-product-if-exists, vendor/sony/tama-common-kddi/tama-common-kddi-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Utils
+$(call inherit-product, $(LOCAL_PATH)/utils.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
