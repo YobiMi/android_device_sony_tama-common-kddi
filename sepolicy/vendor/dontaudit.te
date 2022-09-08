@@ -1,5 +1,7 @@
 # Ignore harmless QCOM denials
 dontaudit {
+  gmscore_app
+  surfaceflinger
   init
   priv_app
 } {
