@@ -258,6 +258,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>ISoundTriggerHw</name>
             <instance>default</instance>
         </interface>
+	<fqname>@2.0::ISoundTriggerHW/default</fqname>
         <fqname>@2.1::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl">
