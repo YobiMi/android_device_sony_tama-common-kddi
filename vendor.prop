@@ -71,7 +71,7 @@ vendor.audio.offload.passthrough=false
 vendor.audio.offload.pstimeout.secs=3
 vendor.audio.offload.track.enable=false
 vendor.audio.parser.ip.buffer.size=262144
-vendor.voice.path.for.pcm.voip=false
+vendor.voice.path.for.pcm.voip=true
 vendor.audio.safx.pbe.enabled=false
 vendor.audio.tunnel.encode=false
 vendor.audio.use.sw.alac.decoder=true
@@ -138,6 +138,9 @@ ro.vendor.audio.soundtrigger.cnn.adsp.level=27
 ro.vendor.audio.soundtrigger.vop.adsp.level=10
 ro.vendor.audio.soundtrigger.training.level=60
 ro.vendor.audio.soundtrigger.hist.duration=1500
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Radio
 DEVICE_PROVISIONED=1
