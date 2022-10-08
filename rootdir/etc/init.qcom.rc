@@ -79,6 +79,7 @@ on init
 
 on late-init
     # Start services for bootanim
+    start hwservicemanager
     start surfaceflinger
     start bootanim
     start vendor.hwcomposer-2-3
