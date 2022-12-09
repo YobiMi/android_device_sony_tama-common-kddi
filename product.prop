@@ -42,7 +42,7 @@ ro.build.shutdown_timeout=2
 sys.fflag.override.settings_seamless_transfer=true
 
 # Device mask
-ro.build.fingerprint=google/redfin/redfin:13/TP1A.220905.004/8927612:user/release-keys
+ro.build.fingerprint=google/redfin/redfin:13/TQ1A.221205.011/9244662:user/release-keys
 ro.product.brand=google
 ro.product.device=redfin
 ro.product.manufacturer=Google
